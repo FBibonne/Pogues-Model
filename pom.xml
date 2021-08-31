@@ -16,14 +16,24 @@
 		</license>
 	</licenses>
 	<scm>
-        <connection>scm:git:https://github.com/InseeFr/Pogues-Model.git</connection>
-        <developerConnection>scm:git:https://github.com/InseeFr/Pogues-Model.git</developerConnection>
-        <url>https://github.com/InseeFr/Pogues-Model/tree/${project.scm.tag}</url>
-    </scm>
+		<connection>scm:git:https://github.com/InseeFr/Pogues-Model.git</connection>
+		<developerConnection>scm:git:https://github.com/InseeFr/Pogues-Model.git</developerConnection>
+		<url>https://github.com/InseeFr/Pogues-Model/tree/${project.scm.tag}</url>
+	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
 		<url>https://github.com/InseeFr/Pogues-Model/issues</url>
 	</issueManagement>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
